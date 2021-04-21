@@ -9,21 +9,53 @@
 /* Begin PBXBuildFile section */
 		031114AC25EF8131003A1D7C /* SelfmadeKochbuchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031114AB25EF8131003A1D7C /* SelfmadeKochbuchApp.swift */; };
 		031114AE25EF8131003A1D7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031114AD25EF8131003A1D7C /* ContentView.swift */; };
-		031114B025EF8133003A1D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031114AF25EF8133003A1D7C /* Assets.xcassets */; };
 		031114B325EF8133003A1D7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031114B225EF8133003A1D7C /* Preview Assets.xcassets */; };
 		031114B525EF8133003A1D7C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031114B425EF8133003A1D7C /* Persistence.swift */; };
 		031114B825EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 031114B625EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodeld */; };
+		031114C925EF81BF003A1D7C /* Favs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031114C125EF81BE003A1D7C /* Favs.swift */; };
+		031114CB25EF81BF003A1D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031114C325EF81BF003A1D7C /* Assets.xcassets */; };
+		031114CD25EF81BF003A1D7C /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031114C525EF81BF003A1D7C /* AddItem.swift */; };
+		031114CE25EF81BF003A1D7C /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031114C625EF81BF003A1D7C /* ItemRow.swift */; };
+		0322E68625F4E58100C92FE4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322E68525F4E58100C92FE4 /* EditView.swift */; };
+		032E220825F3F9F3003FB4B2 /* Importieren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E220725F3F9F3003FB4B2 /* Importieren.swift */; };
+		032E220C25F3FAAA003FB4B2 /* ExIm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E220A25F3FAA9003FB4B2 /* ExIm.swift */; };
+		032E220D25F3FAAA003FB4B2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E220B25F3FAA9003FB4B2 /* Helper.swift */; };
+		0365D4D825F0E2F400C6BEF8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365D4D725F0E2F400C6BEF8 /* MainView.swift */; };
+		0365D4DB25F0E31F00C6BEF8 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365D4DA25F0E31F00C6BEF8 /* FavoritesView.swift */; };
+		03C1C94725EFF3E000351A1A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1C94625EFF3E000351A1A /* DetailView.swift */; };
+		03C1C94A25EFFFFC00351A1A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1C94925EFFFFC00351A1A /* ImagePicker.swift */; };
+		03C1C95125F0229200351A1A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C1C95025F0229200351A1A /* CloudKit.framework */; };
+		DAA519582619D7A500795297 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA519572619D7A500795297 /* Search.swift */; };
+		DAF3760A261A17690070FE08 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF37609261A17680070FE08 /* SafariView.swift */; };
+		DAF37610261A29640070FE08 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3760F261A29640070FE08 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		031114A825EF8131003A1D7C /* SelfmadeKochbuch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfmadeKochbuch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		031114AB25EF8131003A1D7C /* SelfmadeKochbuchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfmadeKochbuchApp.swift; sourceTree = "<group>"; };
 		031114AD25EF8131003A1D7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		031114AF25EF8133003A1D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		031114B225EF8133003A1D7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		031114B425EF8133003A1D7C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		031114B725EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SelfmadeKochbuch.xcdatamodel; sourceTree = "<group>"; };
 		031114B925EF8133003A1D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031114C125EF81BE003A1D7C /* Favs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favs.swift; sourceTree = "<group>"; };
+		031114C325EF81BF003A1D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		031114C525EF81BF003A1D7C /* AddItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
+		031114C625EF81BF003A1D7C /* ItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		0322E68525F4E58100C92FE4 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		032E220725F3F9F3003FB4B2 /* Importieren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Importieren.swift; sourceTree = "<group>"; };
+		032E220A25F3FAA9003FB4B2 /* ExIm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExIm.swift; sourceTree = "<group>"; };
+		032E220B25F3FAA9003FB4B2 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0365D4D725F0E2F400C6BEF8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0365D4DA25F0E31F00C6BEF8 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		03C1C94625EFF3E000351A1A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		03C1C94925EFFFFC00351A1A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		03C1C94D25F0227100351A1A /* SelfmadeKochbuch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SelfmadeKochbuch.entitlements; sourceTree = "<group>"; };
+		03C1C95025F0229200351A1A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DAA519572619D7A500795297 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		DAF37609261A17680070FE08 /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		DAF3760D261A25ED0070FE08 /* SelfmadeKochbuch-WithExtras.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SelfmadeKochbuch-WithExtras.xcdatamodel"; sourceTree = "<group>"; };
+		DAF3760F261A29640070FE08 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C1C95125F0229200351A1A /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +75,7 @@
 			children = (
 				031114AA25EF8131003A1D7C /* SelfmadeKochbuch */,
 				031114A925EF8131003A1D7C /* Products */,
+				03C1C94F25F0229200351A1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +90,28 @@
 		031114AA25EF8131003A1D7C /* SelfmadeKochbuch */ = {
 			isa = PBXGroup;
 			children = (
+				03C1C94D25F0227100351A1A /* SelfmadeKochbuch.entitlements */,
 				031114AB25EF8131003A1D7C /* SelfmadeKochbuchApp.swift */,
+				0322E68525F4E58100C92FE4 /* EditView.swift */,
+				0365D4D725F0E2F400C6BEF8 /* MainView.swift */,
 				031114AD25EF8131003A1D7C /* ContentView.swift */,
-				031114AF25EF8133003A1D7C /* Assets.xcassets */,
+				032E220725F3F9F3003FB4B2 /* Importieren.swift */,
+				0365D4DA25F0E31F00C6BEF8 /* FavoritesView.swift */,
+				031114C625EF81BF003A1D7C /* ItemRow.swift */,
+				03C1C94625EFF3E000351A1A /* DetailView.swift */,
 				031114B425EF8133003A1D7C /* Persistence.swift */,
+				031114C525EF81BF003A1D7C /* AddItem.swift */,
+				031114C325EF81BF003A1D7C /* Assets.xcassets */,
+				032E220B25F3FAA9003FB4B2 /* Helper.swift */,
+				032E220A25F3FAA9003FB4B2 /* ExIm.swift */,
+				03C1C94925EFFFFC00351A1A /* ImagePicker.swift */,
+				031114C125EF81BE003A1D7C /* Favs.swift */,
 				031114B925EF8133003A1D7C /* Info.plist */,
 				031114B625EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodeld */,
 				031114B125EF8133003A1D7C /* Preview Content */,
+				DAA519572619D7A500795297 /* Search.swift */,
+				DAF3760F261A29640070FE08 /* Settings.swift */,
+				DAF37609261A17680070FE08 /* SafariView.swift */,
 			);
 			path = SelfmadeKochbuch;
 			sourceTree = "<group>";
@@ -73,6 +122,14 @@
 				031114B225EF8133003A1D7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03C1C94F25F0229200351A1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03C1C95025F0229200351A1A /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,11 +168,11 @@
 			};
 			buildConfigurationList = 031114A325EF8131003A1D7C /* Build configuration list for PBXProject "SelfmadeKochbuch" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = de;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				de,
 			);
 			mainGroup = 0311149F25EF8131003A1D7C;
 			productRefGroup = 031114A925EF8131003A1D7C /* Products */;
@@ -132,8 +189,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031114CB25EF81BF003A1D7C /* Assets.xcassets in Resources */,
 				031114B325EF8133003A1D7C /* Preview Assets.xcassets in Resources */,
-				031114B025EF8133003A1D7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +202,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				031114B525EF8133003A1D7C /* Persistence.swift in Sources */,
+				032E220D25F3FAAA003FB4B2 /* Helper.swift in Sources */,
+				0365D4D825F0E2F400C6BEF8 /* MainView.swift in Sources */,
 				031114B825EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodeld in Sources */,
+				DAA519582619D7A500795297 /* Search.swift in Sources */,
+				031114C925EF81BF003A1D7C /* Favs.swift in Sources */,
+				DAF3760A261A17690070FE08 /* SafariView.swift in Sources */,
+				0365D4DB25F0E31F00C6BEF8 /* FavoritesView.swift in Sources */,
 				031114AE25EF8131003A1D7C /* ContentView.swift in Sources */,
+				032E220825F3F9F3003FB4B2 /* Importieren.swift in Sources */,
+				03C1C94725EFF3E000351A1A /* DetailView.swift in Sources */,
+				031114CD25EF81BF003A1D7C /* AddItem.swift in Sources */,
+				032E220C25F3FAAA003FB4B2 /* ExIm.swift in Sources */,
+				0322E68625F4E58100C92FE4 /* EditView.swift in Sources */,
 				031114AC25EF8131003A1D7C /* SelfmadeKochbuchApp.swift in Sources */,
+				03C1C94A25EFFFFC00351A1A /* ImagePicker.swift in Sources */,
+				031114CE25EF81BF003A1D7C /* ItemRow.swift in Sources */,
+				DAF37610261A29640070FE08 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +346,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SelfmadeKochbuch/SelfmadeKochbuch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SelfmadeKochbuch/Preview Content\"";
 				DEVELOPMENT_TEAM = 9F7J54XJAJ;
 				ENABLE_PREVIEWS = YES;
@@ -285,6 +358,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.Petersen.Nico.SelfmadeKochbuch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -297,7 +371,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SelfmadeKochbuch/SelfmadeKochbuch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SelfmadeKochbuch/Preview Content\"";
 				DEVELOPMENT_TEAM = 9F7J54XJAJ;
 				ENABLE_PREVIEWS = YES;
@@ -307,6 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.Petersen.Nico.SelfmadeKochbuch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -341,9 +418,10 @@
 		031114B625EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				DAF3760D261A25ED0070FE08 /* SelfmadeKochbuch-WithExtras.xcdatamodel */,
 				031114B725EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodel */,
 			);
-			currentVersion = 031114B725EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodel */;
+			currentVersion = DAF3760D261A25ED0070FE08 /* SelfmadeKochbuch-WithExtras.xcdatamodel */;
 			path = SelfmadeKochbuch.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
