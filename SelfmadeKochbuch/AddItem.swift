@@ -142,11 +142,17 @@ struct AddItem: View {
         newRecipe.link = link
         newRecipe.picture = image?.jpegData(compressionQuality: 1.0)
         newRecipe.instructions = instructions
+       
         
-        if(abteilungSave[abteilung] == "torte" || abteilungSave[abteilung] == "keks" ) {
+        if(abteilung == "torte" || abteilung == "keks" ) {
+            
+        
             newRecipe.backzeit = Int16(backzeit) ?? 0
             newRecipe.temperatur = Int16(temp) ?? 0
+            
+            
         }
+        print(newRecipe)
         
         saveRecipe()
        
@@ -155,6 +161,7 @@ struct AddItem: View {
     func saveRecipe() {
         
         do {
+            print(moc)
         try self.moc.save()
             self.presentationMode.wrappedValue.dismiss()
             AudioServicesPlayAlertSound(SystemSoundID(1102))

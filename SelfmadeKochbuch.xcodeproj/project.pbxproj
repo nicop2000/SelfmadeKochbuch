@@ -52,6 +52,7 @@
 		03C1C94925EFFFFC00351A1A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		03C1C94D25F0227100351A1A /* SelfmadeKochbuch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SelfmadeKochbuch.entitlements; sourceTree = "<group>"; };
 		03C1C95025F0229200351A1A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DA7876AA2647FB4E00CB4C3F /* SelfmadeKochbuch-WithExtras 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SelfmadeKochbuch-WithExtras 2.xcdatamodel"; sourceTree = "<group>"; };
 		DAA519572619D7A500795297 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		DAF37609261A17680070FE08 /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		DAF3760D261A25ED0070FE08 /* SelfmadeKochbuch-WithExtras.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SelfmadeKochbuch-WithExtras.xcdatamodel"; sourceTree = "<group>"; };
@@ -418,6 +419,7 @@
 		031114B625EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				DA7876AA2647FB4E00CB4C3F /* SelfmadeKochbuch-WithExtras 2.xcdatamodel */,
 				DAF3760D261A25ED0070FE08 /* SelfmadeKochbuch-WithExtras.xcdatamodel */,
 				031114B725EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodel */,
 			);

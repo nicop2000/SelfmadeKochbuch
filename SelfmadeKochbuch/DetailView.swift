@@ -104,6 +104,7 @@ struct DetailView: View {
                     .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                     
                     if (rezept.abteilung! == "keks" || rezept.abteilung! == "torte") {
+                        
                         HStack {
                         Text("Bei \(rezept.temperatur) °C \(rezept.backzeit) Minuten backen")
                         }.foregroundColor(colorScheme == .dark ? Color.white : Color.black)
@@ -122,6 +123,8 @@ struct DetailView: View {
                 .font(.callout)
             }
             Button("Exportieren/Teilen") {
+                print(rezept.abteilung)
+                print(rezept)
                 exportRecipe()
                 
             }
