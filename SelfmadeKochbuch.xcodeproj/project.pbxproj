@@ -25,6 +25,8 @@
 		03C1C94725EFF3E000351A1A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1C94625EFF3E000351A1A /* DetailView.swift */; };
 		03C1C94A25EFFFFC00351A1A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C1C94925EFFFFC00351A1A /* ImagePicker.swift */; };
 		03C1C95125F0229200351A1A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C1C95025F0229200351A1A /* CloudKit.framework */; };
+		DA4B19BA2780742D00304236 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B19B92780742D00304236 /* Categories.swift */; };
+		DA4B19BC27809C8F00304236 /* copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B19BB27809C8F00304236 /* copy.swift */; };
 		DAA519582619D7A500795297 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA519572619D7A500795297 /* Search.swift */; };
 		DAF3760A261A17690070FE08 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF37609261A17680070FE08 /* SafariView.swift */; };
 		DAF37610261A29640070FE08 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF3760F261A29640070FE08 /* Settings.swift */; };
@@ -52,6 +54,8 @@
 		03C1C94925EFFFFC00351A1A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		03C1C94D25F0227100351A1A /* SelfmadeKochbuch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SelfmadeKochbuch.entitlements; sourceTree = "<group>"; };
 		03C1C95025F0229200351A1A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DA4B19B92780742D00304236 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		DA4B19BB27809C8F00304236 /* copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = copy.swift; sourceTree = "<group>"; };
 		DA7876AA2647FB4E00CB4C3F /* SelfmadeKochbuch-WithExtras 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SelfmadeKochbuch-WithExtras 2.xcdatamodel"; sourceTree = "<group>"; };
 		DAA519572619D7A500795297 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		DAF37609261A17680070FE08 /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				DAA519572619D7A500795297 /* Search.swift */,
 				DAF3760F261A29640070FE08 /* Settings.swift */,
 				DAF37609261A17680070FE08 /* SafariView.swift */,
+				DA4B19B92780742D00304236 /* Categories.swift */,
+				DA4B19BB27809C8F00304236 /* copy.swift */,
 			);
 			path = SelfmadeKochbuch;
 			sourceTree = "<group>";
@@ -206,11 +212,13 @@
 				032E220D25F3FAAA003FB4B2 /* Helper.swift in Sources */,
 				0365D4D825F0E2F400C6BEF8 /* MainView.swift in Sources */,
 				031114B825EF8133003A1D7C /* SelfmadeKochbuch.xcdatamodeld in Sources */,
+				DA4B19BC27809C8F00304236 /* copy.swift in Sources */,
 				DAA519582619D7A500795297 /* Search.swift in Sources */,
 				031114C925EF81BF003A1D7C /* Favs.swift in Sources */,
 				DAF3760A261A17690070FE08 /* SafariView.swift in Sources */,
 				0365D4DB25F0E31F00C6BEF8 /* FavoritesView.swift in Sources */,
 				031114AE25EF8131003A1D7C /* ContentView.swift in Sources */,
+				DA4B19BA2780742D00304236 /* Categories.swift in Sources */,
 				032E220825F3F9F3003FB4B2 /* Importieren.swift in Sources */,
 				03C1C94725EFF3E000351A1A /* DetailView.swift in Sources */,
 				031114CD25EF81BF003A1D7C /* AddItem.swift in Sources */,
@@ -359,7 +367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = de.Petersen.Nico.SelfmadeKochbuch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -384,7 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = de.Petersen.Nico.SelfmadeKochbuch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

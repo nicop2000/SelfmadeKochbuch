@@ -27,7 +27,7 @@ struct Importieren: View {
             
             Button("Hier Datei auswählen") {
                 openFile.toggle()
-            }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+            }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
             .padding()
             Spacer()
         }.padding(.horizontal, 20)

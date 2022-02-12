@@ -82,7 +82,7 @@ struct Search: View {
                         self.searchText = ""
                         self.showCancelButton = false
                 }
-                .foregroundColor((Color(defaults.colorForKey(key: "color") ?? .green)))
+                .foregroundColor((Color(defaults.colorForKey(key: "color") ?? .blue)))
             }
         }
         .padding(.horizontal)

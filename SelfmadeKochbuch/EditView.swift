@@ -76,7 +76,7 @@ struct EditView: View {
                                 .cancel()
                             ])
                         }
-                    }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                    }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                     .padding(.trailing, 2)
                     
                 }
@@ -105,7 +105,7 @@ struct EditView: View {
                                     .underline()
                                     .padding(.vertical, 2)
                                     .font(.title3)
-                                    .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                                    .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                                 
                                 TextEditor(text: $title)
                                 
@@ -158,7 +158,7 @@ struct EditView: View {
                             .underline()
                             .padding(.vertical, 2)
                             .font(.title3)
-                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                         
                         TextEditor(text: $instructions)
                         
@@ -172,7 +172,7 @@ struct EditView: View {
                             .underline()
                             .padding(.vertical, 2)
                             .font(.title3)
-                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                         TextEditor(text: $ingredients)
                         
                     }.padding(.bottom, 10)
@@ -187,14 +187,14 @@ struct EditView: View {
                             .underline()
                             .padding(.vertical, 2)
                             .font(.title3)
-                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                         TextEditor(text: $backzeit)
                             Spacer()
                             Text("Temperatur in °C:")
                             .underline()
                             .padding(.vertical, 2)
                             .font(.title3)
-                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                         TextEditor(text: $temp)
                             
                         
@@ -210,7 +210,7 @@ struct EditView: View {
                             .underline()
                             .padding(.vertical, 2)
                             .font(.title3)
-                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                         TextEditor(text: $link)
                         
                     }.padding(.bottom, 10)
@@ -270,7 +270,7 @@ struct EditView: View {
                     .offset(x: -5.0)
                 
             }
-            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
             .font(.title3)
         }
     }

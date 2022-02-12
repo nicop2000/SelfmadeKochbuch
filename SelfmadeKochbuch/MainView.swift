@@ -50,7 +50,7 @@ struct MainView: View {
             
                 
             
-        }.accentColor(Color(defaults.colorForKey(key: "color") ?? .green))
+        }.accentColor(Color(defaults.colorForKey(key: "color") ?? .blue))
         
         .opacity(opacity)
         .onAppear {

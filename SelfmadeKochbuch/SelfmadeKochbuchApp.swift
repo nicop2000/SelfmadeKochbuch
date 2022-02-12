@@ -13,6 +13,7 @@ struct SelfmadeKochbuchApp: App {
     
     
     @StateObject var favs = Favs()
+    @StateObject var categories = Categories()
     
     
 
@@ -20,10 +21,7 @@ struct SelfmadeKochbuchApp: App {
         WindowGroup {
             MainView()
                 .environment(\.managedObjectContext, persistenceContainer.container.viewContext)
-                .environmentObject(favs)
-                
-            
-               
+                .environmentObject(favs).environmentObject(categories)
         }
         
     }

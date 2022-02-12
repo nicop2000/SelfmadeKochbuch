@@ -10,6 +10,7 @@ import AudioToolbox
 
 struct AddItem: View {
     let defaults = UserDefaults.standard
+    @EnvironmentObject var categories: Categories
     @Environment(\.managedObjectContext) var moc
     @Environment(\.presentationMode) var presentationMode
     @State private var showAlert = false
@@ -31,10 +32,30 @@ struct AddItem: View {
     @State private var image: UIImage?
     @Environment(\.colorScheme) var colorScheme
     
-    let abteilungPick = ["Frühstück", "Mittagessen", "Abendessen", "Torte/Kuchen", "Kekse/Gebäck", "Dessert", "Anderes"]
-    let abteilungSave: [String: String] = ["Frühstück": "fruehstueck", "Mittagessen": "mittag", "Abendessen": "abend", "Torte/Kuchen": "torte", "Kekse/Gebäck": "keks", "Dessert": "dessert", "Salate": "salate", "Anderes": "other"]
+
         
+    func getArrayPick() -> [String] {
+        var abteilungPick = ["Frühstück", "Mittagessen", "Abendessen", "Torte/Kuchen", "Kekse/Gebäck", "Dessert", "Salate", "Anderes"]
+        for category in categories.categories {
+            abteilungPick += [category]
+        }
+        return abteilungPick
+    }
     
+    func getArraySave() -> [String: String] {
+        var abteilungSave = ["Frühstück": "fruehstueck", "Mittagessen": "mittag", "Abendessen": "abend", "Torte/Kuchen": "torte", "Kekse/Gebäck": "keks", "Dessert": "dessert", "Salate": "salate", "Anderes": "other"]
+        let b = categories.categories
+        var userCategoriesSave: [String: String] = [:]
+        if (categories.categories.count > 0) {
+            for index in 0...categories.categories.count - 1 {
+                userCategoriesSave = userCategoriesSave.merging([categories.categories[index]:categories.categories[index].replacingOccurrences(of: "ä", with: "ae").replacingOccurrences(of: "ö", with: "oe").replacingOccurrences(of: "ü", with: "ue").replacingOccurrences(of: "ß", with: "ss")]) { (current, _) in current }
+                           
+            }
+        
+        }
+        
+        return userCategoriesSave.merging(abteilungSave) { (current, _) in current }
+    }
     
     var body: some View {
         
@@ -45,7 +66,7 @@ struct AddItem: View {
                     TextField("Name des Rezeptes", text: $title)
                     TextField("Beschreibung", text: $description)
                     Picker("Art des Rezeptes", selection: $abteilung) {
-                        ForEach(abteilungPick, id: \.self) {
+                        ForEach(getArrayPick(), id: \.self) {
                             Text($0)
                         }
                     }
@@ -62,7 +83,7 @@ struct AddItem: View {
                         }
                         TextEditor(text: $instructions)
                     }
-                    if(abteilungSave[abteilung] == "torte" || abteilungSave[abteilung] == "keks") {
+                    if(getArraySave()[abteilung] == "torte" || getArraySave()[abteilung] == "keks") {
                         HStack {
                             TextField("Backzeit in Minuten", text: $backzeit)
                             Spacer()
@@ -86,7 +107,7 @@ struct AddItem: View {
                         Spacer()
                         Button("Bild löschen") {
                         image = nil
-                    }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                    }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                         .padding(.trailing, 2)
                     }
                 }
@@ -107,7 +128,7 @@ struct AddItem: View {
                             .cancel()
                         ])
                     }
-                }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                 Section {
                     Button("Speichern") {
                         print("TAPPED")
@@ -118,7 +139,7 @@ struct AddItem: View {
                             addRecipe()
                         }
                     }
-                }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                }.foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                 .alert(isPresented: $showAlert) {
                     Alert(title: Text("Fehler"), message: Text(alertMsg), dismissButton: .default(Text("Okay")))
                 }
@@ -132,7 +153,8 @@ struct AddItem: View {
         
     }
     func addRecipe(){
-        abteilung = abteilungSave[abteilung] ?? "other"
+        abteilung = getArraySave()[abteilung] ?? "other"
+        
         let newRecipe = Recipe(context: self.moc)
         newRecipe.title = title
         newRecipe.id = UUID()

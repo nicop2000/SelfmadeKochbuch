@@ -21,6 +21,7 @@ struct DetailView: View {
     @State private var sharedSheet: Bool = false
     @State private var items: [Any] = []
     @State private var urlFile: URL?
+    @State private var isSharePresented: Bool = false
     
 
     
@@ -72,7 +73,7 @@ struct DetailView: View {
                         .underline()
                         .padding(.vertical, 2)
                         .font(.title2)
-                        .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                        .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                         ScrollView {
                         
                     ForEach(strArr!, id: \.self) { value in
@@ -94,7 +95,7 @@ struct DetailView: View {
                             .underline()
                             .padding(.vertical, 2)
                             .font(.title2)
-                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                         ScrollView {Text(self.rezept.instructions ?? "Keine Anleitung vorhanden")
                         }
                           
@@ -119,18 +120,21 @@ struct DetailView: View {
             if(rezept.link != "" && rezept.link != "\n" && rezept.link != nil) {
             Link("Rezept im Browser anzeigen", destination: URL(string: self.rezept.link!)!)
                 .padding(.horizontal, 10)
-                .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
                 .font(.callout)
             }
             Button("Exportieren/Teilen") {
-                print(rezept.abteilung)
-                print(rezept)
-                exportRecipe()
-                
+                self.isSharePresented = true
             }
             .padding(.horizontal, 10)
-            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
             .font(.callout)
+            .sheet(isPresented: $isSharePresented, onDismiss: {
+                print("Dismiss")
+            }, content: {
+                ActivityViewController(activityItems: exportRecipe())
+            })
+    
             editEntry
                 .padding(.horizontal, 10)
                 
@@ -160,7 +164,7 @@ struct DetailView: View {
                     .offset(x: -5.0)
                     
             }
-            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+            .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
             .font(.title3)
         }
     }
@@ -175,7 +179,7 @@ struct DetailView: View {
                         
                 }
                 .font(.callout)
-                .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .green))
+                .foregroundColor(Color(defaults.colorForKey(key: "color") ?? .blue))
             }
             
         
@@ -207,7 +211,7 @@ struct DetailView: View {
         .font(.subheadline)
     }
     
-    func exportRecipe() {
+    func exportRecipe() -> [Any] {
         let export = RecipeExport(id: rezept.id!, title: rezept.title!, ingredients: rezept.ingredients!, summary: rezept.summary!, instructions: rezept.instructions!, abteilung: rezept.abteilung!, link: rezept.link!)
         
         
@@ -237,10 +241,8 @@ struct DetailView: View {
 
                     // Make the activityViewContoller which shows the share-view
                    
-
-                    // Show the share-view
-                    let av = UIActivityViewController(activityItems: filesToShare, applicationActivities: nil)
-                    UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+                    return filesToShare;
+                    
 
                 } catch {
                     print(error)
@@ -255,6 +257,7 @@ struct DetailView: View {
             print(error)
             AudioServicesPlayAlertSound(SystemSoundID(1053))
         }
+        return []
     }
     
    
@@ -294,4 +297,19 @@ struct DetailView_Previews: PreviewProvider {
                 .environmentObject(Favs())
         }
     }
+}
+
+
+struct ActivityViewController: UIViewControllerRepresentable {
+
+    var activityItems: [Any]
+    var applicationActivities: [UIActivity]? = nil
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ActivityViewController>) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: UIViewControllerRepresentableContext<ActivityViewController>) {}
+
 }
